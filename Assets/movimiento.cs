@@ -2,7 +2,7 @@
 
 public class movimiento : MonoBehaviour {
 
-    public float velocidad = 10f;
+    public float velocidad = 5f;
 
     private Transform objetivo;
     private int indice_wavepoint = 0;
@@ -18,7 +18,7 @@ public class movimiento : MonoBehaviour {
         Vector3 dir = objetivo.position - transform.position;
         transform.Translate(dir.normalized * velocidad * Time.deltaTime, Space.World);
 
-        if (Vector3.Distance(transform.position, objetivo.position) <= 0.4f)
+        if (Vector3.Distance(transform.position, objetivo.position) <= 0.1f)
         {
             GetNextWaypoint();
 
