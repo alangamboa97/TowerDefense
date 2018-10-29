@@ -17,7 +17,17 @@ ModelImporter:
     3300002: portal008
     4300000: Object001
     4300002: portal008
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Object001Mat
+    second: {fileID: 2100000, guid: f7b0ce753e009504cb92c36a8c8d0a18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: portal008Mat
+    second: {fileID: 2100000, guid: b66a37c4f94ffe8428eccee8a77d169f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -89,7 +99,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
