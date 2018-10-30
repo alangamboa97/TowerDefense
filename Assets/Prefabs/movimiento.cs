@@ -31,6 +31,7 @@ public class movimiento : MonoBehaviour {
             if(indice_wavepoint >= Waypoints.waypoints.Length - 1)
             {
                 Destroy(gameObject);
+            return;
             }
             indice_wavepoint++;
             objetivo = Waypoints.waypoints[indice_wavepoint];

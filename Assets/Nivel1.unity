@@ -1223,7 +1223,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4240605977162736, guid: 0c93f895a07fe9a439e2b5ba0932eca6, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -4.79
+      value: -5.35
       objectReference: {fileID: 0}
     - target: {fileID: 4240605977162736, guid: 0c93f895a07fe9a439e2b5ba0932eca6, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1248,7 +1248,7 @@ Prefab:
     - target: {fileID: 23780014023864254, guid: 0c93f895a07fe9a439e2b5ba0932eca6,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 135715485613941862, guid: 0c93f895a07fe9a439e2b5ba0932eca6,
         type: 2}
@@ -2299,6 +2299,50 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: decd516c915bd4c4aa7e8e49db5c61f8, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &210663894
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 210663896}
+  - component: {fileID: 210663895}
+  m_Layer: 0
+  m_Name: GameMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &210663895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210663894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba2ed01ccd95ab14da8156b0015f2e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 4240605977162736, guid: 0c93f895a07fe9a439e2b5ba0932eca6,
+    type: 2}
+  puntodespawn: {fileID: 254584305}
+  tiempo_entre_olas: 6
+--- !u!4 &210663896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210663894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &212400290
 Prefab:
   m_ObjectHideFlags: 0
@@ -11455,7 +11499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04e446a7a809d244c86312052e857328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
+  velocidad: 5
 --- !u!4 &1166062309 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4240605977162736, guid: 0c93f895a07fe9a439e2b5ba0932eca6,
