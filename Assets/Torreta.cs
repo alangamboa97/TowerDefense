@@ -10,6 +10,7 @@ public class Torreta : MonoBehaviour {
     public string tag = "Enemigo";
     public Transform parToRotate;
     public float velocidad = 10f;
+    public AudioSource disparo_s;
 
     public GameObject balaPrefab;
     public Transform punto_salida;
@@ -51,9 +52,12 @@ public class Torreta : MonoBehaviour {
         }
             
     }
-	
-	// Update is called once per frame
-	void Update () {
+    public void Sonido()
+    {
+        disparo_s.Play();
+    }
+    // Update is called once per frame
+    void Update () {
         if(objetivo == null)
         {
             return;
@@ -72,12 +76,13 @@ public class Torreta : MonoBehaviour {
 
 		
 	}
-
+   
     void Disparar()
     {
         GameObject balaGO = (GameObject)Instantiate(balaPrefab, punto_salida.position, punto_salida.rotation);
         Debug.Log("Disparar");
         Bala bala = balaGO.GetComponent<Bala>();
+        Sonido();
 
         if(bala != null)
         {
@@ -85,6 +90,7 @@ public class Torreta : MonoBehaviour {
         }
     }
 
+   
     void OnDrawGizmosSelected() //ayuda visual para calcular el rango
     {
         Gizmos.color = Color.red;

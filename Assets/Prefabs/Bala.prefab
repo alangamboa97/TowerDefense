@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4449058001836134}
   - component: {fileID: 33582343688350182}
   - component: {fileID: 23048467299129276}
+  - component: {fileID: 114585858717465262}
   m_Layer: 0
   m_Name: Bala
   m_TagString: Untagged
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1241110559893050}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114585858717465262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241110559893050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a1f06e639396184aba46d63e893d54e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 70

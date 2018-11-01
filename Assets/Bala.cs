@@ -6,6 +6,7 @@ public class Bala : MonoBehaviour {
 
     private Transform objetivo;
     public float velocidad = 70f;
+    public AudioSource disparo_s;
 
     public void Buscar(Transform _objetivo) //busca un objetivo a que disparar
     {
@@ -34,9 +35,11 @@ public class Bala : MonoBehaviour {
 
         transform.Translate(dir.normalized * distancia_cuadro, Space.World);
 	}
+   
 
     void Hit()
     {
+       
         Destroy(objetivo.gameObject);
         Destroy(gameObject); //destruye la bala cada vez que le da a algo;
     }
