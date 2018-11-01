@@ -144,6 +144,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1695448691466906
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4131009570837114}
+  m_Layer: 0
+  m_Name: punto_disparo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1951388669351582
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,9 +185,23 @@ Transform:
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 4459209068020466}
+  - {fileID: 4131009570837114}
   m_Father: {fileID: 4415022901987486}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 782.18, z: 18.161001}
+--- !u!4 &4131009570837114
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1695448691466906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.039, y: 0.013, z: 1.473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4042961996086774}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4219183379810806
 Transform:
   m_ObjectHideFlags: 1
@@ -552,3 +581,7 @@ MonoBehaviour:
   tag: Enemigo
   parToRotate: {fileID: 4042961996086774}
   velocidad: 10
+  balaPrefab: {fileID: 1241110559893050, guid: 94c1831da17d1314b969d2491c9c6052, type: 2}
+  punto_salida: {fileID: 4131009570837114}
+  disparo: 1
+  conteo_disparo: 0
