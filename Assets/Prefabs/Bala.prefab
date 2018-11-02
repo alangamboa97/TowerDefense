@@ -96,3 +96,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 70
+  disparo_s: {fileID: 82607661919859508, guid: 3773ce4ccd29cdb429f527aa05e443c6, type: 2}

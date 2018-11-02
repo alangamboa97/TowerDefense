@@ -12,6 +12,8 @@ public class Torreta : MonoBehaviour {
     public float velocidad = 10f;
     public AudioSource disparo_s;
 
+    public int Dinero =0;
+
     public GameObject balaPrefab;
     public Transform punto_salida;
 

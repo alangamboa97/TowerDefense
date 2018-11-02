@@ -7,6 +7,8 @@ public class Bala : MonoBehaviour {
     private Transform objetivo;
     public float velocidad = 70f;
     public AudioSource disparo_s;
+    private int Dinero =0;
+    private int vida = 20;
 
     public void Buscar(Transform _objetivo) //busca un objetivo a que disparar
     {
@@ -42,5 +44,10 @@ public class Bala : MonoBehaviour {
        
         Destroy(objetivo.gameObject);
         Destroy(gameObject); //destruye la bala cada vez que le da a algo;
+        if(objetivo.gameObject == null)
+        {
+            
+        }
+        
     }
 }

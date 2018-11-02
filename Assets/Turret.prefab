@@ -581,6 +581,8 @@ MonoBehaviour:
   tag: Enemigo
   parToRotate: {fileID: 4042961996086774}
   velocidad: 10
+  disparo_s: {fileID: 0}
+  Dinero: 0
   balaPrefab: {fileID: 1241110559893050, guid: 94c1831da17d1314b969d2491c9c6052, type: 2}
   punto_salida: {fileID: 4131009570837114}
   disparo: 1
